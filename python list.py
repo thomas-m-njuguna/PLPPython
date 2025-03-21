@@ -1,11 +1,24 @@
+# 1. Create an empty list called my_list
 my_list = []
-my_list.append([10, 20, 30, 40])  # Now my_list = [[10, 20, 30, 40]]
-my_list[0].append(15)  # my_list = [[10, 20, 30, 40, 15]]
 
-sec_list = [50, 60, 70]
+# 2. Append the following elements to my_list: 10, 20, 30, 40
+my_list.extend([10, 20, 30, 40])
 
-my_list.extend(sec_list)  # my_list = [[10, 20, 30, 40, 15], 50, 60, 70]
+# 3. Insert the value 15 at the second position in the list
+my_list.insert(1, 15)
 
-my_list.pop(-1)  # Removes the last element (70)
+# 4. Extend my_list with another list [50, 60, 70]
+my_list.extend([50, 60, 70])
 
-print(my_list)  # Output: [[10, 20, 30, 40, 15], 50, 60]
+# 5. Remove the last element from my_list
+my_list.pop()
+
+# 6. Sort my_list in ascending order
+my_list.sort()
+
+# 7. Find and print the index of the value 30 in my_list
+index_30 = my_list.index(30)
+print("Index of 30:", index_30)
+
+# Print final list to verify
+print("Final my_list:", my_list)
